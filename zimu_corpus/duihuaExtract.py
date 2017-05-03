@@ -4,7 +4,9 @@ Created on Wed May  3 14:44:54 2017
 
 @author: Aoshuo-wj
 """
-
+#筛选出srt的文件处理。
+#用时间来确定是否是属于同一段对话。
+#时间间隔可调整。得出不同的对话。
 import re
 
 def is_srt(path1):
