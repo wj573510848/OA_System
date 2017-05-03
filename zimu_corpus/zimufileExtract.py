@@ -4,6 +4,9 @@ Created on Sun Apr 30 16:18:17 2017
 
 @author: Administrator
 """
+#1.将zipfiles中的压缩文件，全部解压缩至unzipfiles
+#2.将unzipfiles中的文件，进行筛选，将srt、ass、ssa三种类型的文件移动至特定文件夹。
+#3.其余文件删除。
 
 import glob
 import os
@@ -11,12 +14,13 @@ import shutil
 import zipfile
 from unrar import rarfile
 
+#解压缩
 def pZipFile(file_path,save_path):
     
     z=zipfile.ZipFile(file_path,'r')
     z.extractall(save_path)
     z.close()
-
+#解压缩
 def pRarFile(file_path,save_path):
     
     rar=rarfile.RarFile(file_path,'r')
