@@ -5,7 +5,7 @@ import json
 import logging
 from sina01.login import get_cookies
 
-myWeiBo=[('573510848@qq.com','jsy1314'),]
+myWeiBo=[('******@qq.com','******'),]
 
 logger = logging.getLogger(__name__)
 
